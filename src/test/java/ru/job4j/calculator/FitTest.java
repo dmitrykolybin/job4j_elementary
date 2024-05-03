@@ -40,4 +40,24 @@ class FitTest {
 
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenWoman150Then46() {
+        short input = 150;
+        double expected = 46;
+
+        double output = Fit.calculateWomanWeight(input);
+
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenMan160Then69() {
+        short input = 160;
+        double expected = 69;
+
+        double output = Fit.calculateManWeight(input);
+
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
