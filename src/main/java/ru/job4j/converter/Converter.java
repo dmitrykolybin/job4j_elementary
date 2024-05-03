@@ -2,13 +2,16 @@ package ru.job4j.converter;
 
 public class Converter {
 
+    private static final float EURO_RATE = 70;
+    private static final float DOLLAR_RATE = 60;
+
     public static float rubleToEuro(float value) {
-        float result = value / 70;
+        float result = value / EURO_RATE;
         return result;
     }
 
     public static float rubleToDollar(float value) {
-        float result = value / 60;
+        float result = value / DOLLAR_RATE;
         return result;
     }
 
