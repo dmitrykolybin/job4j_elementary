@@ -127,28 +127,22 @@ public class ChessBoardTest {
 
     @Test
     public void testWhenBothX2AndY2AreNegative() {
-
         int x1 = 2;
         int y1 = 6;
         int x2 = -4;
         int y2 = -1;
-
         int result = ChessBoard.way(x1, y1, x2, y2);
-
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
     public void testWhenBothX1AndY1AreNegative() {
-
         int x1 = -2;
         int y1 = -6;
         int x2 = 4;
         int y2 = 1;
-
         int result = ChessBoard.way(x1, y1, x2, y2);
-
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
